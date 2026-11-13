@@ -1,0 +1,134 @@
+[
+  {
+    "num": 1,
+    "tag": "INTRO",
+    "title": "Title & Introduction",
+    "notes": "Begin by resolving the terminology. Explain that 'H-Computing' is most accurately presented as High-Performance Computing, or HPC. Rather than thinking of HPC as one giant computer, think of it as an architecture that coordinates huge amounts of compute, memory, networking and storage so that difficult problems can be divided and solved simultaneously.",
+    "transition": "“So before looking at companies or markets, we need a precise understanding of what HPC actually is.”",
+    "sources": [
+      "NIST HPC Glossary: csrc.nist.gov/glossary/term/high_performance_computing",
+      "TOP500 June 2026 (67th Edition): top500.org/lists/top500/2026/06/"
+    ]
+  },
+  {
+    "num": 2,
+    "tag": "DEFINITION",
+    "title": "What is H-Computing?",
+    "notes": "AWS defines HPC as aggregating computing systems to perform simultaneous complex calculations across huge amounts of data. Each machine in a cluster is a node, and nodes cooperate through parallel processing. The June 2026 #1 TOP500 system, LineShine, sustained 2.198 exaflops using 13,789,440 cores.",
+    "transition": "“That system-level view explains why simply adding more computers does not automatically create an effective HPC environment.”",
+    "sources": [
+      "AWS HPC Overview: aws.amazon.com/what-is/hpc/",
+      "Microsoft Azure HPC Guidance (2026)",
+      "TOP500 June 2026 Highlights (LineShine 2.198 EFLOP/s)"
+    ]
+  },
+  {
+    "num": 3,
+    "tag": "ARCHITECTURE",
+    "title": "How H-Computing Works",
+    "notes": "The key concept is parallelization and co-optimization. A scheduler (such as Slurm) divides available resources among jobs; the application then distributes work across CPUs or GPUs. Fast GPUs attached to slow networking or slow storage sit idle waiting for data.",
+    "transition": "“Once we understand the architecture, we can see exactly why data science benefits from it.”",
+    "sources": [
+      "Google Cloud GPU Documentation (2026)",
+      "AWS Parallel Computing Service (Slurm): aws.amazon.com/pcs/"
+    ]
+  },
+  {
+    "num": 4,
+    "tag": "IMPORTANCE",
+    "title": "Importance in Data Science",
+    "notes": "For data science, HPC changes what questions can be asked. NERSC supported 12,179 users, 926 institutions, and 2,617 science results in 2025. At ORNL, the ORBIT-2 weather AI trained on Frontier generates localized predictions in milliseconds vs. days of traditional supercomputing (~99% accuracy).",
+    "transition": "“This shift in scale has changed not only performance, but the entire data-science workflow.”",
+    "sources": [
+      "NERSC 2025 Statistics: nersc.gov",
+      "OLCF ORBIT-2 Release (Nov 14, 2025): olcf.ornl.gov"
+    ]
+  },
+  {
+    "num": 5,
+    "tag": "PARADIGM",
+    "title": "Changes Brought by H-Computing",
+    "notes": "Modern server systems increasingly run both traditional HPC simulations and AI workloads. Hyperion Research updated its market taxonomy in June 2025 to include AI-centric servers from non-traditional suppliers alongside historic HPC systems.",
+    "transition": "“So what kinds of problems justify this level of computing power?”",
+    "sources": [
+      "Hyperion Research: 'Updated View of the HPC/AI Market' (June 2025, pp. 13–15)"
+    ]
+  },
+  {
+    "num": 6,
+    "tag": "APPLICATIONS",
+    "title": "Real-World Applications",
+    "notes": "ECMWF’s operational AI Forecasting System produces a 15-day global forecast in minutes (using a 120-GPU GH200 cluster added in 2025). ORNL’s Frontier trains generative protein-design models and runs plant-imaging methods that cut memory use by up to 75% and double processing speed.",
+    "transition": "“These use cases translate directly into infrastructure spending—and a rapidly changing market.”",
+    "sources": [
+      "ECMWF (Oct 2026): 'Why ECMWF needs both supercomputing and cloud services'",
+      "ORNL Frontier Protein & Plant Research (2025–2026)"
+    ]
+  },
+  {
+    "num": 7,
+    "tag": "MARKET",
+    "title": "Market Impact & Growth",
+    "notes": "Hyperion reported combined HPC/AI spending exceeded $70B in 2025 (+16.9% YoY), with on-prem servers forecast to grow from $25.33B (2024) to $47.12B (2029) at 13.2% CAGR. Grand View Research uses a broader definition ($56.7B in 2025 to $104.7B by 2033). Never mix different analyst series.",
+    "transition": "“This growth is distributed across an ecosystem—chip designers, system manufacturers, cloud providers and software companies.”",
+    "sources": [
+      "Hyperion Research (June 2025 & May 2026 via HPCwire)",
+      "Grand View Research HPC Market Report (2026–2033)"
+    ]
+  },
+  {
+    "num": 8,
+    "tag": "ECOSYSTEM",
+    "title": "Major Companies Involved",
+    "notes": "NVIDIA, AMD, and Intel supply silicon and accelerators; HPE and Dell integrate systems; AWS, Azure, and Google Cloud provide elastic cloud HPC. In Hyperion's 2024 on-prem server revenue dataset ($25.33B), HPE led at 28.2%, non-traditional AI suppliers reached 27.4%, and Dell held 15.5%.",
+    "transition": "“To see how all these layers come together, consider one landmark system: Frontier.”",
+    "sources": [
+      "Hyperion Research 2024 Server Vendor Table (2025)",
+      "TOP500 June 2026 System Records"
+    ]
+  },
+  {
+    "num": 9,
+    "tag": "CASE STUDY",
+    "title": "Real-World Case Study: Frontier",
+    "notes": "Frontier at ORNL became the first publicly ranked exascale system in May/June 2022 (1.102 EFLOP/s), improving through software optimization to 1.194 (2023), 1.206 (June 2024), and 1.353 EFLOP/s (Nov 2024–June 2026).",
+    "transition": "“Frontier represents today’s architecture—but several trends are already changing what comes next.”",
+    "sources": [
+      "TOP500 Lists (June 2022 – June 2026)",
+      "ORNL Frontier Overview: olcf.ornl.gov"
+    ]
+  },
+  {
+    "num": 10,
+    "tag": "TRENDS",
+    "title": "Current & Future Trends",
+    "notes": "By June 2026, five systems achieved sustained HPL exascale: LineShine (2.198), El Capitan (1.809), Frontier (1.353), Aurora (1.012), and JUPITER Booster (1.000). Cloud HPC is projected to reach ~$30B by 2030, while AI server power density rose 11x between 2020 and 2025.",
+    "transition": "“But all this performance comes with significant economic, engineering and environmental constraints.”",
+    "sources": [
+      "TOP500 June 2026 Highlights",
+      "IEA 'Key Questions on Energy and AI' (2026)"
+    ]
+  },
+  {
+    "num": 11,
+    "tag": "CHALLENGES",
+    "title": "Challenges & Limitations",
+    "notes": "During HPL benchmarks, LineShine drew 42.22 MW, El Capitan 29.69 MW, and Frontier 24.61 MW. Note that the IEA projection of 485 TWh (2025) to ~950 TWh (2030) covers all global data centers, not HPC alone.",
+    "transition": "“So the significance of HPC is not simply that computers are becoming faster—it is that the boundary of feasible data science is moving.”",
+    "sources": [
+      "TOP500 June 2026 Power Records",
+      "IEA 'Powering Artificial Intelligence' (Oct 14, 2026)",
+      "U.S. BLS Employment Projections (2025–2035)"
+    ]
+  },
+  {
+    "num": 12,
+    "tag": "CONCLUSION",
+    "title": "Conclusion & Key Takeaways",
+    "notes": "In four years, public exascale computing moved from one system to five, while GPUs, cloud platforms, and AI frameworks brought HPC directly into mainstream data science. Invite audience questions.",
+    "transition": "“Thank you. I welcome your questions.”",
+    "sources": [
+      "TOP500 June 2026 • Hyperion May 2026 • IEA Oct 2026"
+    ]
+  }
+]
